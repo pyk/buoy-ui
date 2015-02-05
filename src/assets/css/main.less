@@ -1,2 +1,44 @@
 // import components
 // @import (less) "components/nameofcomponent.less";
+
+
+@import (less) "fonts/opensans.less";
+
+html, body {
+    margin: 0;
+    height: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-style: normal;
+    color: rgba(20, 39, 54, 1);
+}
+
+.limiter {
+    max-width: 1000px;
+}
+
+.typed-cursor{
+    opacity: 1;
+    -webkit-animation: blink 0.7s infinite;
+    -moz-animation: blink 0.7s infinite;
+    animation: blink 0.7s infinite;
+}
+@keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-webkit-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+@-moz-keyframes blink{
+    0% { opacity:1; }
+    50% { opacity:0; }
+    100% { opacity:1; }
+}
+
+@import (less) "components/buoy-ic.less";
+@import (less) "components/header.less";
+@import (less) "components/signup-action.less";
