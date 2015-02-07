@@ -14,3 +14,7 @@ build `DOCKER_NODE_JS_IMG` from this [repo][docker-nodejs].
 
     docker build -t bayu/buoy-ui:service .
     docker run -P -d bayu/buoy-ui:service
+
+Explanation about how to maintain configuration file available on this [post][nginx-docker].
+
+[nginx-docker]: http://nginx.com/blog/deploying-nginx-nginx-plus-docker/
