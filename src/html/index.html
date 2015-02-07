@@ -4,7 +4,7 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
-        <title>A Hosted Support Page For Your Company - Buoy</title>
+        <title>Help Center For Your SaaS Company - Buoy</title>
 
         <!-- Bootstrap -->
         <link href="assets/bootstrap/css/bootstrap.css" rel="stylesheet">
@@ -24,102 +24,101 @@
        
     </head>
     <body>
-        <!-- <section id="buoy-navbar-container">
-            <div class="container limiter">
-                <div class="row buoy-navbar">
-                    <div class="col-lg-2">
-                        <div class="logo">
-                            <a class="buoy-ic buoy-ic-logo-txt-dark" href="/">
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 pull-right">
-                        <div class="menu">
-                            <a href="#">Customers</a>
-                            <a href="#">Features</a>
-                            <a href="#">Pricing</a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section> -->
         <section id="header">
             <div class="container limiter">
+                
+                <!-- navbar -->
                  <div class="row buoy-navbar">
-                    <div class="col-lg-2">
+                    <div class="col-lg-1 pull-left">
                         <div class="logo">
-                            <a class="buoy-ic buoy-ic-logo-txt-dark" href="/">
+                            <a class="buoy-ic-logo buoy-ic-logo-light-blue buoy-ic-logo-white" href="/">
                             </a>
                         </div>
                     </div>
-                    <div class="col-lg-4 pull-right">
-                        <div class="menu">
+                    <div class="col-lg-11 hidden-xs">
+                        <div class="menu pull-left">
                             <a href="#">Customers</a>
                             <a href="#">Features</a>
                             <a href="#">Pricing</a>
                         </div>
+
+                        <div class="menu pull-right">
+                            <a href="#" data-toggle="modal" class="buoy-btn-sign-in" data-target="#buoy-modal-sign-in">
+                                Sign in
+                            </a>
+                        </div>
                     </div>
                 </div>
+                
+                <!-- header -->
                 <div class="row header-content">
                     <div class="col-lg-12 header-content-headline">
                         <h3>
-                            Create <span class="header-content-txt-typed"></span>your customer deserves.
+                            Help center your customer deserves.
                         </h3>
                     </div>
                     <div class="col-lg-10 col-lg-offset-1 header-content-txt">
+                        <!-- 
                         <p>
                             Everything your customer need to find answer in one place, instantly searchable, the best tool for your team to deliver great customer support page.
-                        </p>
+                        </p> 
+                        -->
+
+                        <p>
+                            All customers are doesn't like to wait your customer support team's reply. Increase customer satisfaction by providing help center for your business.
+                        </p>                  
                     </div>
                 </div>
 
-                <div class="row header-list-feature-container">
-                    <div class="col-lg-4 col-md-4 col-sm-6 header-list-feature">
-                        <div class="feature-ic buoy-ic buoy-ic-fast"></div>
-                        <div class="feature-desc">
-                            <h3>Instantly searchable</h3>
-                            <p>Faster, Happier customer.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-6 header-list-feature">
-                        <div class="feature-ic buoy-ic buoy-ic-md"></div>
-                        <div class="feature-desc">
-                            <h3>Markdown support</h3>
-                            <p>Modern tool for modern company.</p>
-                        </div>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-6 header-list-feature">
-                        <div class="feature-ic buoy-ic buoy-ic-team"></div>
-                        <div class="feature-desc">
-                            <h3>For your team</h3>
-                            <p>Collaboration for the win.</p>
-                        </div>
-                    </div>    
-                </div>
-            </div>
-        </section>
-
-        <section id="signup-action">
-            <div class="container">
+                <!-- CTA -->
                 <div class="row">
                     <div class="col-lg-12 call-to-action">
-                        <h3>Create awe-inspiring customer support page in second, For free.</h3>
-                        <form class="form-inline">
-                            <div class="form-group">
-                                <!-- <label for="exampleInputName2">Name</label> -->
-                                <input type="text" class="form-control" id="user-company" placeholder="Company name">
+                        <form action="#" class="form-inline">
+                            <div class="form-group buoy-form-group-get-started">
+                                <div class="input-group">
+                                    <input type="email" class="form-control buoy-form-get-started" placeholder="Enter your email">
+                                    <span class="input-group-btn">
+                                        <button type="submit" class="btn btn-default buoy-btn-get-started">Get started</button>
+                                    </span>
+                                </div>
                             </div>
-                            <div class="form-group">
-                                <!-- <label for="exampleInputEmail2">Email</label> -->
-                                <input type="email" class="form-control" id="user-email" placeholder="Email address">
-                            </div>
-                            <button type="submit" class="btn btn-default btn-signup">Sign up</button>
                         </form>
                     </div>
                 </div>
-            </div>
+
             </div>
         </section>
+        
+        <!-- modal sign-in -->
+        <div class="modal fade" id="buoy-modal-sign-in" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h1>Sign in</h1>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <div class="modal-body">
+                        <div class="sign-in-form">
+                            <form action="#" id="buoy-modal-form-sign-in">
+                                <input type="email" class="form-control" placeholder="Email address">
+                                <input type="password" class="form-control" placeholder="Password">
+                                <div class="row">
+                                    <div class="col-lg-6">
+                                        <p><a href="#">Forgot password?</a></p>
+                                    </div>
+                                    <div class="col-lg-6 buoy-modal-btn-sign-in">
+                                        <button type="submit" class="btn btn-default">Sign In</button>  
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
         <!-- libs -->
         <script src="assets/libs/jquery.min.js"></script>
         <!-- Include all compiled plugins (below), or include individual files as needed -->
