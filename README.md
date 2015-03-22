@@ -10,7 +10,7 @@ build `DOCKER_NODE_JS_IMG` from this [repo][docker-nodejs].
 
 [docker-nodejs]: https://github.com/pyk/docker-nodejs
 
-## Nginx service
+## Run a container with docker
 
     docker build -t bayu/buoy-ui:service .
     docker run -P -d bayu/buoy-ui:service
@@ -18,3 +18,17 @@ build `DOCKER_NODE_JS_IMG` from this [repo][docker-nodejs].
 Explanation about how to maintain configuration file available on this [post][nginx-docker].
 
 [nginx-docker]: http://nginx.com/blog/deploying-nginx-nginx-plus-docker/
+
+## Configure a service on system level
+add instance of `buoy-ui.service` to `/etc/systemd/system` 
+    
+    sudo cp buoy-ui.service /etc/systemd/system/buoy-ui-{nomor}.service
+
+start a service on system level
+
+    sudo systemctl enable /etc/systemd/system/buoy-ui-{nomor}.service
+    sudo systemctl start buoy-ui-{nomor}.service
+
+check status of service
+
+    sudo systemctl status buot-ui-{nomor}.service
